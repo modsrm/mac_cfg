@@ -1,0 +1,24 @@
+[push]
+    default = simple
+[user]
+    email = roberto@pagefault.io
+    name = modsrm
+
+[alias]
+lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)-- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)-- %an%C(reset)' --abbrev-commit
+lg = !"git lg1"
+st = status -s
+
+[core]
+    editor = vim
+[color]
+    ui = true
+[merge]
+    tool = meld
+[mergetool "meld"]
+    cmd = meld $BASE $LOCAL $REMOTE -o $MERGED
+[diff]
+    tool = meld
+[difftool "meld"]
+    cmd = meld $LOCAL $REMOTE
