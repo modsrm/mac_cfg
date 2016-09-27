@@ -17,8 +17,8 @@ st = status -s
 [merge]
     tool = meld
 [mergetool "meld"]
-    cmd = meld $BASE $LOCAL $REMOTE -o $MERGED
+    cmd = /Applications/Meld.app/Contents/MacOS/Meld $BASE $LOCAL $REMOTE -o $MERGED
 [diff]
     tool = meld
 [difftool "meld"]
-    cmd = meld $LOCAL $REMOTE
+    cmd = /Applications/Meld.app/Contents/MacOS/Meld $LOCAL $REMOTE
