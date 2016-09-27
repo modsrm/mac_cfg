@@ -77,6 +77,7 @@ export PS1='\n\[\e[1;35m\]\u@\[\e[1;31m\]\H \[\e[36;1m\]\w\n\[\e[33;1m\][\t]\[\e
 alias fsize='du --max-depth 1 -h'
 alias ssh-x='ssh -XC -c arcfour,blowfish-cbc'
 alias objdump='objdump -M intel'
+alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
 
 #TMUX aliases
 alias ts='tmux -2 switch -t'
@@ -86,4 +87,6 @@ alias tn='tmux -2 new -s'
 
 #Setup editor
 export EDITOR=/usr/local/bin/vim
+
+export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
 
