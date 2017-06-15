@@ -78,6 +78,7 @@ alias fsize='du --max-depth 1 -h'
 alias ssh-x='ssh -XC -c arcfour,blowfish-cbc'
 alias objdump='objdump -M intel'
 alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
+alias sbt_dbg='sbt -jvm-debug 5005'
 
 #TMUX aliases
 alias ts='tmux -2 switch -t'
